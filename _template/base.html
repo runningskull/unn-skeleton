@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript" src="//use.typekit.net/qhf4gmd.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <title>We make Rafflecopter - {% block title %}{{ Title }}{% endblock %}</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" media="screen">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a id="go-home" href="/" title="My Blog">This is my blog.</a></h1>
+        </header>
+
+        {% block content %}{% endblock %}
+
+        <footer id="bottom">The End.</footer>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById('go-home').className = 'fade'
+        }, 5000);
+    </script>
+    {% block scripts %}{% endblock %}
+</body>
+
