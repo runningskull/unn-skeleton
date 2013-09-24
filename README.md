@@ -3,14 +3,14 @@
 1. Fork this repository
 2. Clone your new repository to your computer (optionally, run `mkvirtualenv myblog`)
 3. Run `pip install -r requirements.txt`
-4. Edit config.py to set up your deployment settings (default is S3)
+4. Edit `config.py` to set up your deployment settings (default is S3)
 5. Think of something good to write (this step is harder than the others)
 
 
 ## Use it day-to-day
 
 `unn idea my-idea` to start a new draft. Use markdown for formatting.  
-`unn publish my-idea` to converta  draft to a post.  
+`unn publish my-idea` to convert a  draft to a post.  
 `unn build` to build your site's pages.  
 `unn local` to serve it locally.  
 `unn deploy` to push it live. (this will build first, as a convenience)
